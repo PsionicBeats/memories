@@ -1,6 +1,19 @@
 /*http://www.w3schools.com/cssref/css3_pr_flex.asp
 	NOTE: IF ELE IS NOT FLEXIBLE, NO FLEX APPLIED;
+	Flip Animation Ref- 
+		https://gist.github.com/knorthfield/3808607
+		https://fiddle.jshell.net/james2doyle/qsQun/light/
+	Test animation w/ :hover- 
+		http://www.w3schools.com/css/css3_transitions.asp
+	Flexbox Ref-
+		http://slides.com/kelliborgonia/flexbox-grids-sept-2016#/
+		https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+	Keyframes Ref- 
+		https://css-tricks.com/snippets/css/keyframe-animation-syntax/
+	Arrays Ref-
+		http://javascript.info/tutorial/array
 */
+
 header {
 	text-align: center;
 	font-size: 48px;
@@ -9,34 +22,46 @@ header {
 	background-color: #8b979b;
 }
 
-
-.container {
-	width: 600px;
-	padding: 50px;
-	margin: auto;
-}
-
-footer {
-	text-align: center;
-	font-size: 48px;
-	width: 100%;
-	height: 100px;
-
-}
-
-#cards {
+.row {
 	display: flex;
-	flex-flow: wrap;
-	justify-content: space-around;
+	flex-flow: row nowrap;
+	justify-content: center;
 	align-content: center;
-	flex-direction: row;
+	flex: 0 0 500px;
+	-webkit-perspective: 800px;
+	perspective: 800px;
 }
 
-#cards div {
-	width: 80px;
+.row .card {
+	width: 100px;
 	height: 120px;
 	border: 1px solid;
-	background-color: #42cbf4;
+	
 	padding: 10px;
 	margin: 10px;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+.card {
+	-webkit-transition: -webkit-transform 1s;
+	transition: transform 1s;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 50%;
+}
+
+.card .front {
+	background: #42cbf4;
+}
+
+.card .back {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	background: red;
+}
+
+.card.flipped {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
