@@ -4,6 +4,7 @@
 		https://gist.github.com/knorthfield/3808607
 		https://fiddle.jshell.net/james2doyle/qsQun/light/
 		https://nnattawat.github.io/flip/
+		https://codepen.io/darkwing/pen/bCali
 	Test animation w/ :hover- 
 		http://www.w3schools.com/css/css3_transitions.asp
 	Flexbox Ref-
@@ -40,8 +41,8 @@ header {
 	
 	padding: 10px;
 	margin: 10px;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
+	/* backface-visibility: hidden;
+	-webkit-backface-visibility: hidden; */)
 }
 
 .card {
