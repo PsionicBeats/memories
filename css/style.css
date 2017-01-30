@@ -3,6 +3,7 @@
 	Flip Animation Ref- 
 		https://gist.github.com/knorthfield/3808607
 		https://fiddle.jshell.net/james2doyle/qsQun/light/
+		https://nnattawat.github.io/flip/
 	Test animation w/ :hover- 
 		http://www.w3schools.com/css/css3_transitions.asp
 	Flexbox Ref-
@@ -51,14 +52,14 @@ header {
 	-webkit-transform-origin: 50% 50%;
 }
 
-.card .front {
+.front {
 	background: #42cbf4;
 }
 
-.card .back {
+.back {
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-	background: red;
+	background: #42f4f1;
 }
 
 .card.flipped {
