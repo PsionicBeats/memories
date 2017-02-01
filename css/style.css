@@ -5,6 +5,7 @@
 		https://fiddle.jshell.net/james2doyle/qsQun/light/
 		https://nnattawat.github.io/flip/
 		https://codepen.io/darkwing/pen/bCali
+		http://simonlockyer.info/flip-div-css3-tutorial/
 	Test animation w/ :hover- 
 		http://www.w3schools.com/css/css3_transitions.asp
 	Flexbox Ref-
@@ -51,19 +52,18 @@ header {
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	-webkit-transform-origin: 50% 50%;
-}
-
-.front {
-	background: #42cbf4;
+	background-image: url("../assets/front.jpg") no-repeat;
 }
 
 .back {
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-	background: #42f4f1;
+	background-color: #42cbf4;
+	
 }
 
 .card.flipped {
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
+	background-color: #42cbf4;
 }
