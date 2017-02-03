@@ -9,14 +9,32 @@
 
 console.log("Hello");
 
-var count = 1
+/*var count = 1
 
 function flip(id) {
 	var test = document.getElementById(id);
 	console.log(test);
-	/* count ++
+	 count ++
 	if (count == 2) {
 		$(test).addClass('card');
-	} */
+	} 
 	$(test).addClass('back');
+}*/
+
+
+function turnCard (card){
+	document.getElementById(card).style.transform = 'rotateY(180deg)';
+
+if (document.getElementById(card).style.transform === 'rotateY(180deg)'){
+	setTimeout(function(){
+		document.getElementById(card).style.transform = 'rotateY(0deg)';
+		}, 1000);
+	}
+}
+
+var clickCount = 0;
+var clickMax = 2;
+
+if (clickCount == clickMax) {
+	
 }
