@@ -35,36 +35,62 @@ header {
 	perspective: 800px;
 }
 
-.row .card {
-	width: 100px;
-	height: 120px;
-	border: 1px solid;
-	
-	padding: 10px;
-	margin: 10px;
-	/* backface-visibility: hidden;
-	-webkit-backface-visibility: hidden; */)
-}
-
 .card {
+	/*Make functional on multiple browsers, transition time, dimension*/
 	-webkit-transition: -webkit-transform 1s;
 	transition: transform 1s;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	-webkit-transform-origin: 50% 50%;
-	background-image: url("../assets/front.jpg");
+	
+	background-size: 119px 140px;
 	background-repeat: no-repeat;
+	width: 100px;
+	height: 120px;
+	border: 1px solid;
+	padding: 10px;
+	margin: 10px;
+	/*-webkit-backface-visibility: hidden; */
+}
+
+.front, .back{
+	 backface-visibility: hidden;
+
+}
+.front{
+	transform: rotateY(0deg);
+	background-image: url("../assets/front.jpg");
 }
 
 .back {
-	-webkit-transform: rotateY(180deg);
-	transform: rotateY(180deg);
-	background-color: #42cbf4;
+	transform: 180deg;
+	/*-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);*/
+
+	/*background-color: #42cbf4;*/
 	
+}
+
+.club {
+	background-image: url("../assets/four.png");
+	visibility: visible;
+}
+
+.spade {
+	background-image: url("../assets/two.png");
+}
+
+.heart {
+	background-image: url("../assets/three.png");
+}
+
+.diamond {
+	background-image: url("../assets/one.png");
 }
 
 .card.flipped {
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-	background-color: #42cbf4;
+
+	/*background-color: #42cbf4;*/
 }

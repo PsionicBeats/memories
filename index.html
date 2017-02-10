@@ -10,24 +10,49 @@
 
 
  
-  	<div class="row">
+  	<div class="row"><!--row1-->
   	<!--new: this.id passes into the function, still gonna be "someclass", but it's gonna be referred to id-->
   		<div id="one" class="card" onclick="turnCard(this.id)">
+  			<div class="front"></div>
+  			<div class="back heart"></div>
   		</div>
-  		<div id="two" class="card" onclick="turnCard(this.id)"></div>
-  		<div id="three" class="card" onclick="turnCard(this.id)"></div>
-  		<div id="four" class="card" onclick="turnCard(this.id)"></div>
-		</div>
+  		<div id="two" class="card" onclick="turnCard(this.id)">
+  			<div class="front"></div>
+  			<div class="back diamond"></div>
+  		</div>
+  		<div id="three" class="card" onclick="turnCard(this.id)">
+  			<div class="front"></div>
+  			<div class="back club"></div>
+  		</div>
+  		<div id="four" class="card" onclick="turnCard(this.id)">
+  			<div class="front"></div>
+  			<div class="back diamond"></div>
+  		</div>
+		</div><!--row1-->
 
-  	<div class="row">
-  		<div id="five" class="card" onclick="turnCard(this.id)"></div>
-  		<div id="six" class="card" onclick="turnCard(this.id)"></div>
-  		<div id="seven" class="card" onclick="turnCard(this.id)"></div>
-  		<div id="eight" class="card" onclick="turnCard(this.id)"></div>
-  	</div>
+  	<div class="row"> <!--row2-->
+  		<div id="five" class="card" onclick="turnCard(this.id)">
+  			<div class="front"></div>
+  			<div class="back spade"></div>
+  		</div>
+  		<div id="six" class="card" onclick="turnCard(this.id)">
+  			<div class="front"></div>
+  			<div class="back heart"></div>
+  		</div>
+  		<div id="seven" class="card" onclick="turnCard(this.id)">
+  			<div class="front"></div>
+  			<div class="back club"></div>
+  		</div>
+  		<div id="eight" class="card" onclick="turnCard(this.id)">
+  			<div class="front"></div>
+  			<div class="back spade"></div>
+  		</div>
+  	</div> <!--row2-->
  
  
-	<footer></footer>
+	<footer>
+		<h1>Points: 0</h1>
+	</footer>
 <!--<script src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
 <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 Allows for jQuery and jQuery Flip.
