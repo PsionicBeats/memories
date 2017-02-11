@@ -17,7 +17,7 @@
 		http://javascript.info/tutorial/array
 */
 
-header {
+header, footer {
 	text-align: center;
 	font-size: 48px;
 	width: 100%;
@@ -25,12 +25,14 @@ header {
 	background-color: #8b979b;
 }
 
+
 .row {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-content: center;
 	flex: 0 0 500px;
+
 	-webkit-perspective: 800px;
 	perspective: 800px;
 }
@@ -39,33 +41,35 @@ header {
 	/*Make functional on multiple browsers, transition time, dimension*/
 	-webkit-transition: -webkit-transform 1s;
 	transition: transform 1s;
+
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	-webkit-transform-origin: 50% 50%;
-	
+
+
+	background-image: url("../assets/front.jpg");
 	background-size: 119px 140px;
 	background-repeat: no-repeat;
+	-webkit-backface-visibility: hidden;
+
 	width: 100px;
 	height: 120px;
 	border: 1px solid;
 	padding: 10px;
 	margin: 10px;
-	/*-webkit-backface-visibility: hidden; */
+	 
 }
 
+/*Hide back of card*/
 .front, .back{
 	 backface-visibility: hidden;
 
 }
 .front{
 	transform: rotateY(0deg);
-	background-image: url("../assets/front.jpg");
+	
 }
 
 .back {
-	transform: 180deg;
-	/*-webkit-transform: rotateY(180deg);
-	transform: rotateY(180deg);*/
 
 	/*background-color: #42cbf4;*/
 	

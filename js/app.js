@@ -10,7 +10,6 @@
 console.log("Hello");
 
 /*var count = 1
-
 function flip(id) {
 	var test = document.getElementById(id);
 	console.log(test);
@@ -40,7 +39,6 @@ if (document.getElementById(card).style.transform === 'rotateY(180deg)'){
 		- pause and resume animations flip over if NO MATCH
 		- IF MATCH destroy cards
 		- have code read assets to check for matching
-
 */
 
 var clickCount = 0;
@@ -55,5 +53,5 @@ document.getElementsByClassName("card").onclick = function() {
 
 	if (clickCount == 1) {
 		
-	}
+	};
 };
